@@ -1,0 +1,131 @@
+@font-face {
+	font-family: "Trajan";
+	src: url('../fonts/Cinzel-Regular.ttf');
+}
+
+@font-face {
+	font-family: "Roboto";
+	src: url('../fonts/RobotoCondensed-Regular.ttf');
+}
+
+body {
+	font-family: "Tahoma";
+}
+
+#header{
+	background-color: #004822;
+	border-bottom: 4px solid #6bb45f;
+}
+
+#dept-name h2, #dept-name h4, #dept-name h5{
+	font-family: "Trajan";
+	font-weight: 600;
+	margin: 5px 5px 5px 0px;
+	color: #ffffff;
+}
+
+#dept-name h2{
+	margin-bottom: 0px;
+}
+
+#dept-name h5{
+	margin-top: 0px;
+}
+
+
+#logo{
+	height: 115px;
+	width: auto;
+	margin: 20px 10px 14px 25px;
+	display: inline;
+	vertical-align: top;
+}
+
+#dept-name{
+	padding-top: 30px;
+	display: inline-block;
+}
+
+#line{
+	height: 2px;
+	width: 360px;
+	background-color: #ffffff;
+}
+
+#seal{
+	height: 115px;
+	width: auto;
+	margin: 20px 25px 14px 0px;
+	display: inline;
+	vertical-align: top;
+	float: right;
+}
+
+#hdr{
+	float: right;
+	height: 20px;
+	margin: 8px 20px 0px;
+}
+
+.field-content, .field-content p{
+	font-family: "Tahoma";
+	font-size: 12px;
+}
+
+.field-content a, .jcarousel-clip.jcarousel-clip-horizontal a{
+	font-family: "Roboto";
+	font-size: 13px;
+	/*color: #004822;*/
+}
+
+#block-views-hot-topics-block .field-content img{
+	height: 83px;
+}
+
+h5.block__title.block-title{
+	color:#333;border-bottom:1px solid #eee;padding-bottom:5px;
+}
+
+#block-menu-menu-master-head-menu{
+	margin-bottom: 0px;
+}
+
+#block-block-4{
+	height: 513px;
+}
+
+#block-views-programs-a-z-block .views-field-title a{
+	font-family: "Tahoma";
+	font-size: 12px;
+}
+
+.view-quicktabs .view-footer h3, #quicktabs-container-statistics .view-header h3{
+	border-bottom:1px solid #eee; padding-bottom:10px;
+}
+
+#block-block-6 a{
+	font-family: "Tahoma";
+	font-size: 12px;
+	color: #555;
+}
+
+#upcomingevents{
+	color: #6bb45f;
+}
+
+#contact-info h4{
+	font-weight: normal;
+	font-size: 18px;
+
+}
+
+ul#mainlinks{
+	text-transform: uppercase;
+	font-size: 13px;
+}
+
+#sm{
+	text-align: center;
+	border: 0px;
+}
+

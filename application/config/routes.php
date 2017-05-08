@@ -53,10 +53,14 @@ $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
+$route['welcome'] = 'welcome';
 $route['evaluation'] = 'evaluation';
-$route['website'] = 'website';
 $route['demographics'] = 'demographics';
 $route['thanks'] = 'thanks';
+$route['results'] = 'results';
+$route['results/respondents'] = 'respondent';
+$route['results/answers'] = 'answer';
+$route['website/(:any)/(:any)'] = 'website/view/$1/$2';
 
 $route['news/(:any)'] = 'news/view/$1';
 $route['news'] = 'news';

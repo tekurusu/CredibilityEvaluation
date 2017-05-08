@@ -1,0 +1,79 @@
+@font-face {
+	font-family: "Trajan";
+	src: url('../fonts/Cinzel-Regular.ttf');
+}
+
+@font-face {
+	font-family: "Roboto";
+	src: url('../fonts/RobotoCondensed-Regular.ttf');
+}
+
+body {
+	font-family: "Tahoma";
+}
+
+#bnr{
+	color: #ffffff;
+	padding: 10px 0px 10px 0px;
+}
+
+#dept-name h1, #dept-name h2 {
+	font-family: "Trajan";
+	font-weight: 550;
+	margin: 5px 5px 5px 0px;
+}
+
+#dept-name h1{ font-size: 18pt; }
+#dept-name h2{ font-size: 12pt; }
+
+#dept-name h1{
+	margin-bottom: 0px;
+}
+
+#logo{
+	height: 110px;
+	width: auto;
+	margin: 15px 20px 10px 25px;
+	display: inline;
+	vertical-align: top;
+}
+
+#dept-name, .large-3.medium-12.columns{
+	padding-top: 30px;
+	display: inline-block;
+}
+
+#line{
+	height: 2px;
+	width: 550px;
+	background-color: #ffffff;
+}
+
+.custom a{
+	font-family: "Roboto";
+}
+
+.blog-featured p, ul.category-module{
+	text-align: justify;
+	font-size: 14px;
+}
+
+.item-title{
+	font-size: 22px;
+}
+
+#gwt-menu, #auxiliary{
+	font-family: "Roboto";
+}
+
+div#set-rl_sliders-1{
+	font-size: 13px;
+}
+
+div#set-rl_sliders-1 {
+	font-size: 16px;
+	}
+
+i.fa.fa-universal-access.fa-2x{
+	color: #e4e4e4;
+}

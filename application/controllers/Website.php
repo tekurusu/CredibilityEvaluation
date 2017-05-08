@@ -23,4 +23,16 @@ class Website extends CI_Controller {
 		$this->load->view('website');
 	}
 
+	public function view($site_name, $mod_id) {
+
+    if ($site_name == null || $mod_id == null) {
+      show_404();
+    }
+
+    $this->load->helper('html');
+    $this->load->view('templates/header');
+    $this->load->view($site_name . '/' . $mod_id . '/index.html');
+    $this->load->view('templates/footer');
+  }
+
 }

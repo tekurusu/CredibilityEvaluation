@@ -1,0 +1,73 @@
+@font-face {
+	font-family: "Trajan";
+	src: url('../fonts/Cinzel-Regular.ttf');
+}
+
+@font-face {
+	font-family: "Roboto";
+	src: url('../fonts/RobotoCondensed-Regular.ttf');
+}
+
+body {
+	color: #222222;
+	font-family: "Tahoma";
+}
+
+#banner{
+	width: 100%;
+	height: 125px;
+	padding: 10px 0px 15px 0px;
+	background-color: #ffffff;
+	border-bottom: 4px solid #FFBF00;
+}
+
+#banner-wrapper{
+	margin:auto; 
+	position:relative; 
+	width:1190px;
+	color: #222222;
+}
+
+#dept-name h1, #dept-name h2 {
+	font-family: "Trajan";
+	font-weight: 550;
+	margin: 5px 5px 5px 0px;
+}
+
+#dept-name h1{ font-size: 17pt; }
+#dept-name h2{ font-size: 13pt; }
+
+#dept-name h1{
+	margin-bottom: 0px;
+}
+
+#logo{
+	height: 110px;
+	width: auto;
+	margin: 10px 20px 10px 0px;
+	display: inline;
+	vertical-align: top;
+}
+
+#dept-name{
+	padding-top: 30px;
+	display: inline-block;
+}
+
+#line{
+	height: 2px;
+	width: 640px;
+	background-color: #222222;
+}
+
+#seal{
+	height: 110px;
+	width: auto;
+	margin: 10px 0px 10px 0px;
+	display: inline;
+	vertical-align: top;
+	float: right;
+}
+
+#footer h2{font-family: 'Roboto'; text-transform: uppercase;}
+#footer-wrapper{font-family: 'Roboto';}

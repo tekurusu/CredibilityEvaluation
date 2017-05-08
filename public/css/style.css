@@ -1,27 +1,37 @@
 ::selection { background-color: #E13300; color: white; }
 	::-moz-selection { background-color: #E13300; color: white; }
 
+	@font-face {
+	font-family: "Trajan";
+	src: url('../fonts/Cinzel-Regular.ttf');
+	}
+
+	@font-face {
+		font-family: "Roboto";
+		src: url('../fonts/RobotoCondensed-Regular.ttf');
+	}
+
+
 	body {
 		background-color: #fff;
-		margin: 40px;
+		margin-top: 80px;
+		margin-bottom: 100px;
 		font: 13px/20px normal Helvetica, Arial, sans-serif;
 		color: #4F5155;
+		text-align: center;
+		font-family: Tahoma,Helvetica,Arial,sans-serif
 	}
 
 	a {
-		color: #003399;
+		color: #003399;	
 		background-color: transparent;
 		font-weight: normal;
 	}
 
 	h1 {
-		color: #444;
-		background-color: transparent;
 		border-bottom: 1px solid #D0D0D0;
 		font-size: 19px;
 		font-weight: normal;
-		margin: 0 0 14px 0;
-		padding: 14px 15px 10px 15px;
 	}
 
 	code {
@@ -35,8 +45,15 @@
 		padding: 12px 10px 12px 10px;
 	}
 
-	#body {
-		margin: 0 15px 0 15px;
+	#content {
+		display: inline-block;
+		text-align: left;
+		background-color: #fff;
+		box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
+		padding: 17px;
+		width: 100%;
+		border-top: 8px solid #ddd;
+		max-width: 640px;
 	}
 
 	p.footer {
@@ -49,7 +66,50 @@
 	}
 
 	#container {
-		margin: 10px;
-		border: 1px solid #D0D0D0;
-		box-shadow: 0 0 8px #D0D0D0;
+
 	}
+
+	.color-banner {
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 165px;
+		position: absolute;
+		z-index: -1000;
+		background-color: #9d9d9d;
+	}
+
+.form-required {
+  font-weight: normal;
+  margin-top: 20px;
+}
+
+.form-required:after {
+  content: "*";
+  color: #db4437;
+}
+
+div.required-note {
+	margin-top: 20px;
+	font-size: 12px;
+	color: #db4437;
+}
+
+hr {
+  margin-top: 0;
+  margin-bottom: 2.5px;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+
+input[name=email] {
+	width: 50%;
+}
+
+.prevent-hover {
+	cursor: default !important;
+}
+
+.prevent-hover:hover {
+	text-decoration: none;
+}

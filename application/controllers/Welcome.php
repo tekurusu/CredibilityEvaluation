@@ -20,8 +20,47 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('templates/header');
-		$this->load->view('welcome');
+		$this->load->helper('form');
+    	$this->load->library('form_validation');
+
+    	$this->form_validation->set_rules('email', 'Email', 'required|valid_email|is_unique[respondent.email]');
+
+		  $this->load->view('templates/header');
+    	if ($this->form_validation->run() == FALSE) {
+        $this->load->view('welcome');
+      }
+      else {
+        $this->load->dbutil();
+        $this->load->library('session');
+
+        // get the survey set
+        $query = $this->db->query("SELECT SS.set_code, SS.site_1
+          FROM survey_set SS
+            LEFT JOIN survey S on S.set_code = SS.set_code
+            LEFT JOIN site_answer SA on SA.survey_id = S.survey_id
+          GROUP BY SS.set_code
+          ORDER BY count(S.survey_id) asc
+          LIMIT 1");
+        $set = $query->row_array();
+
+        $this->session->unset_userdata('set_code');
+        $this->session->unset_userdata('email');
+			  $newdata = array(
+          'email' => $this->input->post('email'),
+          'set_code' => $set["set_code"]
+        );
+
+			$this->session->set_userdata($newdata);
+
+      $site_query = $this->db->get_where('site', array('short_name' => $set["site_1"]));
+      $site = $site_query->row_array();
+
+      $data['site_name'] = $site["name"];
+      $data['short_link'] = $site["short_name"];
+      
+      $this->load->view('evaluation', $data);
+    }
+
 	}
 
 }

@@ -93,7 +93,7 @@
 					<div class="col-md-3"><input type="radio" name="rank_3" value="O" <?php echo set_radio('rank_3', 'O'); ?> /></div>
 					<div class="col-md-3"><textarea name="orig_comment_3" rows="4" cols="40"></textarea></div>
 				</div></div>
-				<input type="submit">
+				<input type="submit" value="Next">
 			</form>
 	</div>
 

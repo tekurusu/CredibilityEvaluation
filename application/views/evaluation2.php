@@ -1,13 +1,5 @@
-<head>
-	<script>
-	var theURL = 'website';
-	var width  = 300;
-	var height = 400;
 
-	function popWindow() {
-	newWindow = window.open(theURL,'newWindow','toolbar=no,menubar=no,resizable=no,scrollbars=no,status=no,location=no,width='+width+',height='+height);
-	}
-	</script>
+	<script src="<?php echo base_url("public/js/submit_page.js"); ?>"></script>
 	<style>
 	#row1
 	{
@@ -18,11 +10,11 @@
 		background-color: gainsboro;
 	}
 	</style>
-</head>
+
 <body>
 
 <div id="container">
-	<h1>2. <?php echo $site_name; ?></h1>
+	<h1><?php echo $site_name; ?></h1>
 
 	<?php echo validation_errors(); ?>
 
@@ -47,7 +39,7 @@
 					<div class="col-md-3">Please share your comments</div>
 				</div>
 			 	<div class="row" id="row1"><div class="form-group">
-					<div class="col-md-3"><a href="javascript:popWindow()">Link1</a></div>
+					<div class="col-md-3 website_1"><a onclick="popWindow('<?php echo $short_link; ?>', 3)">View Website 1</a></div>
 					<div class="col-md-3">
 						<table>
 							<tr>
@@ -58,7 +50,7 @@
 								<td>5</td>
 							</tr>
 							<tr>
-								<td><input type="radio" name="orig_rating_2" value="1" <?php echo set_radio('orig_rating_2', '1'); ?> /></td>
+								<td><input type="radio" name="orig_rating_2" value="1" required <?php echo set_radio('orig_rating_2', '1'); ?> /></td>
 								<td><input type="radio" name="orig_rating_2" value="2" <?php echo set_radio('orig_rating_2', '2'); ?> /></td>
 								<td><input type="radio" name="orig_rating_2" value="3" <?php echo set_radio('orig_rating_2', '3'); ?> /></td>
 								<td><input type="radio" name="orig_rating_2" value="4" <?php echo set_radio('orig_rating_2', '4'); ?> /></td>
@@ -66,12 +58,12 @@
 							</tr>
 						</table>
 					</div>
-					<div class="col-md-3"><input type="radio" name="rank_2" value="O" <?php echo set_radio('rank_2', 'O'); ?> /></div>
-					<div class="col-md-3"><textarea name="orig_comment_2" rows="4" cols="40"></textarea></div>
+					<div class="col-md-3"><input type="radio" name="rank_2" value="O" required <?php echo set_radio('rank_2', 'O'); ?> /></div>
+					<div class="col-md-3"><textarea name="orig_comment_2" rows="4" cols="40" required></textarea></div>
 				</div></div>
 
 				<div class="row" id="row2"><div class="form-group">
-					<div class="col-md-3"><a href="javascript:popWindow()">Link2</a></div>
+					<div class="col-md-3"><a onclick="popWindow('<?php echo $short_link; ?>', 2)">View Website 2</a></div>
 					<div class="col-md-3">
 						<table>
 							<tr>
@@ -82,7 +74,7 @@
 								<td>5</td>
 							</tr>
 							<tr>
-								<td><input type="radio" name="mod_rating_2" value="1" <?php echo set_radio('mod_rating_2', '1'); ?> /></td>
+								<td><input type="radio" name="mod_rating_2" value="1" required <?php echo set_radio('mod_rating_2', '1'); ?> /></td>
 								<td><input type="radio" name="mod_rating_2" value="2" <?php echo set_radio('mod_rating_2', '2'); ?> /></td>
 								<td><input type="radio" name="mod_rating_2" value="3" <?php echo set_radio('mod_rating_2', '3'); ?> /></td>
 								<td><input type="radio" name="mod_rating_2" value="4" <?php echo set_radio('mod_rating_2', '4'); ?> /></td>
@@ -90,10 +82,10 @@
 							</tr>
 						</table>
 					</div>
-					<div class="col-md-3"><input type="radio" name="rank_2" value="M" <?php echo set_radio('rank_2', 'M'); ?> /></div>
-					<div class="col-md-3"><textarea name="mod_comment_2" rows="4" cols="40"></textarea></div>
+					<div class="col-md-3"><input type="radio" name="rank_2" value="M" required <?php echo set_radio('rank_2', 'M'); ?> /></div>
+					<div class="col-md-3"><textarea name="mod_comment_2" rows="4" cols="40" required></textarea></div>
 				</div></div>
-				<input type="submit">
+				<input type="submit" value="Next">
 			</form>
 	</div>
 

@@ -1,0 +1,191 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900);
+
+/*typography*/
+h1, h2, h3, h4, h5, h6 {font-family: "Roboto Condensed",sans-serif; font-weight: 700;} /*text-transform: uppercase;}*/
+
+/*top bar*/
+/*#main-nav {background: #333;}*/
+#main-nav {background: #333;height: 45px;}
+
+/*masthead*/
+#masthead {background:#fff; border-bottom: 1px solid #f2f2f2; padding: .1rem 0;} /* DD: padding changed from 1.25rem 0 */
+	#masthead #logo h1 {margin:0; padding:0;}
+	/* #masthead #logo p {margin:0; padding:0;} */
+	#masthead #logo p {padding:0;}
+	
+
+/*banner*/
+#banner {background: #fcfcfc; border-bottom: 1px solid #f2f2f2; padding: 1.25rem 0;}
+	#banner .bg-banner {background: #f2f2f2; border: 1px solid #d8d8d8;}
+	
+	/*banner 3/4 right panel*/
+	#banner #featured01 {padding: 1.25rem;}
+			#featured01 h3, #featured01 h4, #featured01 p {color: #666;}
+
+/*main*/
+#main {padding: 1.25rem 0;}
+
+/*footer*/
+/* #footer {background: #e9e9e9; padding: 1.25rem 0; border-top: 1px solid #f2f2f2;} */
+#footer {background: #e9e9e9; padding: 1.25rem 0;}
+	#footer img.republic-seal {}
+	#footer h4, #footer p, #footer li, #footer a {color: #999;}
+	#footer h4 {font-size: 60%;}
+	#footer p, #footer li {font-size: 70%;}
+	/* #footer ul, ol {padding: 0; margin: 0; } */
+	/* #footer li {list-style: none; display: block;} */
+	#footer li {list-style: block;}
+	
+
+/* joomla styling starts here */
+	/* top bar active color */
+    .top-bar-section li.active:not(.has-form) a:not(.button) {
+      background: #272727; }
+	  
+	/* search box */
+	input[type="text"] {height: 1.675rem;}
+	
+	/* auxiliary menu */
+	#auxiliary {background: #333;}
+	
+	/* breadcrumbs span */
+	.breadcrumbs {margin-top: 10px; background: #fcfcfc; border-color: #f2f2f2;}
+	.breadcrumbs span.current {color: #333;}
+	
+	/* time */
+	.time {background: #333; border-color: #222; width: 90%;}
+	.time .pst {font-size: 13px;}
+	
+	/* article info and pagination */
+	.print-icon, .email-icon, .edit-icon {font-size: 0.75rem; float: left; text-transform: uppercase;}
+	.print-icon, .email-icon {margin-right: 40px;}
+	.print-icon {list-style-image: url(images/system/printButton.png);}
+	.email-icon {list-style-image: url(images/system/emailButton.png);}
+	.edit-icon {list-style:-image: url(images/system/editButton.png);}
+	.article-info, .tags, .post-box p {clear: left;}
+	.article-info-term {display: none;}
+	dd {display: inline-block; padding-right: 12px; font-size: 0.75rem; color: #999; }
+	.createdby, .category-name, .published, .create, .modified, .hits {margin: 0;}
+	.tags .label {background: #FCFCFC; border: 1px solid #F2F2F2; color: #258FAF; padding: 10px;}
+	.tags {padding: 10px 0 20px;}
+	.readmore {font-size: 0.875rem; font-weight: bold;}
+	p.counter {display: none;}
+    .pagination {float: none; text-align: center; text-transform: uppercase;}
+    .pagination ul {display: inherit; text-align: center;}
+	.pagination ul li {display: inline; margin: 0 5px;}
+	.pagination a, .pagination span {float: none; display: inline-block; font-size: 0.75rem; font-weight: bold;}
+	ul.pager li, ul.pagenav li {display: inline; margin: 0 5px;}
+	ul.pager, ul.pagenav {float: none; text-align: center; text-transform: uppercase; font-size: 0.75rem; font-weight: bold;}
+	
+	/* newsflash */
+	h4.newsflash-title {border-top: 1px solid #DDD; padding-top: 5px;}
+	
+	/* login form, edit */
+	#login-form {border: 1px solid #D8D8D8; padding: 15px; background: #F2F2F2;}
+	#login-form li {font-size: .875rem;}
+	#login-form .btn {padding: .75rem 1.5rem .75rem;}
+	#jform_publish_up_img, #jform_publish_down_img {display: none;}
+	#editor-xtd-buttons {padding: 10px 0; float: left;}
+	#editor-xtd-buttons a {font-weight: bold; margin-right: 15px;}
+	.toggle-editor .btn-group {font-weight: bold; float: right; padding: 10px 0;}
+	
+	/* modules */
+	.wrapper {border: 1px solid #D8D8D8;}
+	.dateReadon .button {padding: 0 10px 0 0; font-size: .75rem; background-color: #FFF; color: #999; margin-bottom: -15px;}
+	.latestnews .lnTitle {margin-bottom: -5px;}
+	.latestnews li {list-style: none; margin: 10px 0 0 -15px; border-top: 1px solid #D8D8D8; padding-top: 10px;}
+	
+	/* banner */
+	#banner .bg-banner {border: none; background: none;}
+	#banner .fullwidth {width: 100%; height: 100%;}
+	
+	/* content */
+	.button {text-align: left;}
+	.entry-title {padding: 10px;}
+	.page-header h2 {text-transform: none; font-size: 2rem;}
+	.padding {padding: 0 20px;}
+	.result-created {font-size: 0.75rem; color: #999;}
+	.result-title {padding: 10px 0;}
+	.divider .separator {display: none;}
+	p.img_caption {font-size: 0.75rem;}
+
+/* from Joomla 223 */
+	
+	/** Chrome Hacks **/
+	@media screen and (-webkit-min-device-pixel-ratio:0)
+	{ 
+	    .dropdown {margin-left: 15px; } 
+	}
+	/** End Chrome Hacks **/
+
+	/** Additions **/
+	.scrollup{
+				width:40px;
+				height:40px;			
+				text-indent:-9999px;
+				opacity:0.3;
+				position:fixed;
+				bottom:50px;
+				right:100px;
+				display:none;			
+				/*background: url('../images/icon_top.png') no-repeat;*/
+	}
+
+	a.skips {float:left;position:absolute;z-index:-1}
+	
+	.moduletable {
+	margin-bottom: 0.5em;
+	border-width: thin;		
+	border-style: solid;
+	border-color: rgb(215, 215, 219);
+	padding: 10px 10px 0px 10px;
+	background-color: #f8f8f8; }
+	
+	table {border: 1px solid #000000; }
+	table li {font-size: .75rem; }
+	
+	p {font-size: .75rem; }
+
+.container-banner {  padding:0; max-height:460px; }
+.container-banner h1 { color:#000; margin:10px 0 10px 0; font-size: 32px; }
+
+.container-footer, .container-dark {
+	padding: 30px 0;
+	background-color: #e9e9e9;
+	//border-top: 1px solid #e1e1e1;
+}
+
+.container-footer h6 {
+	color: rgb(17, 17, 17);
+	font-size: 14px;
+}
+
+.container-footer-govph {
+	padding: 30px 0;
+	background: #e9e9e9;
+	color: #666;
+	margin-bottom: -200px;
+}
+
+.container-footer-govph a {
+  	color: #666;
+}
+
+.container-footer-govph h6 {
+  	font-size: 14px;
+  	color: #666;
+}
+
+.seal-mono {
+	display: block;
+	width: 60%;
+	margin: 0 auto;
+}
+
+.container-footer li, .container-footer-govph li, .container-footer p { font-size:.9em; color:#666}
+
+.container-footer-govph p { font-size:.6em; color:#666}
+
+/* Added to disable front-end editing */
+li.edit-icon {display: none;}
+table.contentpaneopen tr td span.hasTip a img {display: none;}

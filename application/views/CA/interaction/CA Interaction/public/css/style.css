@@ -1,0 +1,160 @@
+
+a:link {
+color:#666666;
+font-size:9px;
+text-decoration:none;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+
+     }
+a:hover {
+color:#666666;
+font-size:9px;
+font-weight:bold;
+text-decoration:none;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+
+      }   
+    
+a:visited{
+color:#666666;
+font-size:9px;
+text-decoration:none;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+
+       }    
+
+.forms{
+border-color:#333333;
+border-width:1px;
+font-size:12px;
+    }
+
+.style1 {
+font-size: 9px;
+border: 1px solid #CCCCCC;
+color: #666666;
+    }
+    
+.style3 {
+  font-family: "Times New Roman", Times, serif;
+  color: #000000;
+  font-size: 125%;
+    }   
+    
+.style4 {
+  color: #000000;
+  font-size: 70%;
+    }     
+    
+.style5 {
+  color: #000000;
+  font-size: 90%;
+    }     
+          
+body,td,th {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+body {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background-color: #121212;
+  background-image:url('images/spacerBack.jpg');
+  background-repeat:repeat-x;
+  
+  
+}
+.style6 {color: #FFFFFF}
+
+ 
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: 12px;
+    background-color: #333;
+
+}
+
+li {
+    float: left;
+}
+
+li.btn a, a.dropbtn, .dropbtn {
+    display: inline-block;
+    color: #eee;
+    text-align: center;
+    padding: 13px 15px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+ul.menu a:hover, .dropdown:hover .dropbtn {
+    background-color: #37922E;
+    color: white;
+    font-size: 12px;
+    font-weight: normal;
+    
+
+}
+
+ul.menu li.dropdown {
+    display: inline-block;
+    font-size: 12px;
+    color: #eee;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    background-color: #f1f1f1;
+    font-size: 12px;
+}
+
+.dropdown-content a {
+    font-size: 12px;
+    font-color: white;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+
+}
+
+.dropdown-content a:hover {background-color: #37922E; color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+
+}
+
+.radio-inline{
+  font-size: xx-small;
+}
+
+.radio-btn{
+  height: 11px;
+  width: 11px;
+}
+
+/*#rdmr{
+  font-size: x-small;
+  color: #666666;
+}
+
+#rdmr:hover{
+  color: #37922E;
+}*/
+
+.list-group{
+  padding: 0px 15px;
+}
+
+.list-group-item{
+  padding: 0px 0px 5px 0px;
+}
+

@@ -1,0 +1,135 @@
+@font-face {
+	font-family: "Trajan";
+	src: url('../fonts/Cinzel-Regular.ttf');
+}
+
+@font-face {
+	font-family: "Roboto";
+	src: url('../fonts/RobotoCondensed-Regular.ttf');
+}
+
+body {
+	color: #222222;
+	font-family: "Tahoma";
+}
+
+#dept-name h1, #dept-name h2 {
+	font-family: "Trajan";
+	font-weight: 600;
+	margin: 5px 5px 5px 0px;
+	padding-bottom: 0px;
+}
+
+#dept-name h1{ font-size: 16pt; }
+#dept-name h2{ font-size: 12pt; }
+
+#dept-name h1{
+	margin-bottom: 0px;
+}
+
+#logo{
+	height: 110px;
+	width: auto;
+	margin: 7px 20px 10px 0px;
+	display: inline;
+	vertical-align: top;
+}
+
+#dept-name{
+	padding-top: 10px;
+	display: inline-block;
+}
+
+#line{
+	height: 2px;
+	width: 560px;
+	background-color: #222222;
+}
+
+#seal{
+	height: 110px;
+	width: auto;
+	margin: 10px 0px 10px 0px;
+	display: inline;
+	vertical-align: top;
+	float: right;
+}
+
+#et-secondary-menu ul li a{
+	font-family: "Roboto";
+	font-size: 15px;
+	font-weight: 500;
+}
+
+#top-header .container.clearfix{
+	padding: 15px 30px 5px 30px;
+}
+
+#top-menu a{
+	font-family: "Roboto";
+	font-size: 18px;
+	font-weight: 500;
+}
+
+#page-container #main-header.home.et-fixed-header .container.clearfix.et_menu_container .logo_container #dept-name h1 {
+	-moz-transition: all 0.4s ease-in-out; -webkit-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out;
+	font-size: 12pt;
+}
+
+#page-container #main-header.home.et-fixed-header .container.clearfix.et_menu_container .logo_container #dept-name h2 {
+	-moz-transition: all 0.4s ease-in-out; -webkit-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out;
+	font-size: 9pt;
+}
+
+#page-container #main-header.home.et-fixed-header .container.clearfix.et_menu_container .logo_container #dept-name #line {
+	-moz-transition: all 0.4s ease-in-out; -webkit-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out;
+	width: 420px;
+	height: 1.5px;
+}
+
+#page-container #main-header.home.et-fixed-header .container.clearfix.et_menu_container .logo_container #dept-name {
+	-moz-transition: all 0.4s ease-in-out; -webkit-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out;
+	padding-top: 3px;
+}
+
+#tagline{
+	font-family: 'Roboto';
+	font-size: 25px;
+	line-height: 30px;
+	margin-top: 5px;
+}
+
+.dswd-programs{
+	font-family: "Roboto";
+}
+
+#social{
+	font-size: 50px;
+    padding: 0;
+}
+
+.dswd-footer .title, #footer-info{
+	font-family: "Roboto";
+}
+
+.dswd-footer{
+	padding: 0px;
+}
+
+.et_pb_code .et_pb_module  .et_pb_code_9{
+	margin-bottom: 0px;
+}
+
+#disclaimer{
+	font-family: "Roboto";
+	font-weight: normal;
+	font-size: x-small;
+}
+
+#imgcont{
+	background-color: rgba(255, 255, 255, 0.6);
+	border-radius: 3px;
+	width: 310px;
+	height: 400px;
+	padding: 10px;
+}

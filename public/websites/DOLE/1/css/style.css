@@ -1,0 +1,47 @@
+@font-face {
+	font-family: "Trajan";
+	src: url('../public/fonts/Cinzel-Regular.ttf');
+}
+
+@font-face {
+	font-family: "Roboto";
+	src: url('../public/fonts/RobotoCondensed-Regular.ttf');
+}
+
+h1, h2 {font-family: "Trajan";}
+h3, h4, h5, .li-header {font-family: "Roboto"; font-weight: 700;} 
+h6 {font-family: "Roboto"; font-weight: 500;}
+
+body{
+	font-size: 12px;
+	font-family: "Tahoma";
+}
+
+#logo{
+	height: 100px;
+	width: auto;
+	margin: 10px 16px 10px 0;
+	display: inline;
+	vertical-align: top;
+	padding-left: 189.5px;
+}
+
+#dept-name{
+	padding-top: 30px;
+	display: inline-block;
+	margin: 0px 0px 5px 0px;
+}
+
+#dept-name h1, h2{
+	font-family: "Trajan";
+	font-weight: 600;
+}
+
+#dept-name h1{ font-size: 24pt; }
+#dept-name h2{ font-size: 14pt; }
+
+#line{
+	height: 2px;
+	width: 670px;
+	background-color: black;
+}
