@@ -1,35 +1,37 @@
-.forms{
-border-color:#333333;
-border-width:1px;
-font-size:12px;
-	  }
+.forms {
+	border-color: #333333;
+	border-width: 1px;
+	font-size: 12px;
+}
 
 .style1 {
-font-size: 10px;
-border: 1px solid #CCCCCC;
-color: #666666;
-margin-left: 4px;
-		}
-		
+	font-size: 10px;
+	border: 1px solid #CCCCCC;
+	color: #666666;
+	margin-left: 4px;
+}
+
 .style3 {
 	color: #000000;
 	font-size: 125%;
-		}		
-		
+}
+
 .style4 {
 	font-family: "Roboto";
 	font-size: 70%;
 	color: #ffffff;
 	border: 9px solid #f4f5f5;
 	vertical-align: middle;
-	}
-.style5 {font-family: "Roboto";
-	font-size: 90%;}						
-.style6 {color: #FFFFFF}
+}
 
+.style5 {
+	font-family: "Roboto";
+	font-size: 90%;
+}
 
-
-
+.style6 {
+	color: #FFFFFF
+}
 
 @font-face {
 	font-family: "Trajan";
@@ -45,42 +47,77 @@ body {
 	position: relative;
 	height: 100%;
 	background-color: #f2f2f2;
-	background-image:url('public/images/spacerBack.jpg');
-	margin: 40px 0px 0px 0px;
+	background-image: url('public/images/spacerBack.jpg');
+	margin: 5px 0px 5px 0px;
 	font-family: "Tahoma";
 	color: #222222;
 }
 
-
 a {
-	color:#0097D0;
-	text-decoration:none;
+	color: #0097D0;
+	text-decoration: none;
 	background-color: transparent;
 	font-weight: normal;
 	font-family: "Roboto";
 }
 
-a:hover{
-	color:#23527c;
+a:hover {
+	color: #23527c;
 }
 
-#main{
+#main {
 	border-spacing: 0px;
 	border: 12px solid #333333;
 }
 
-#mast{
+#mast {
 	background-color: #162b4c;
 	color: #ffffff;
 }
 
-#mast td{
- 	border: 0px;
- 	border-bottom: 4px solid #04142d;
- 	padding: 0px;
- }
+#mast td {
+	border: 0px;
+	border-bottom: 4px solid #04142d;
+	padding: 0px;
+}
 
-#dept-name h2, h4, h5, #court-profile h1 {
+#dept-name h1, #dept-name h3, #dept-name h4 {
+	font-family: "Trajan";
+	font-weight: 500;
+}
+
+#dept-name h1 {
+	margin: 0;
+	font-size: 24px;
+}
+
+#dept-name h5 {
+	display: inline-block;
+	color: #FCD000;
+	font-weight: 700;
+	margin: 8px 0;
+	padding-bottom: 2px;
+	font-size: 20px;
+}
+
+#dept-name h3 {
+	margin: 0;
+	font-size: 14px;
+	border-bottom: 1px solid #FFF;
+	margin: 12px 0 5px 0;
+	font-size: 19px;
+	padding: 0 0 5px 0;
+	display: inline-block;
+	width: 300px;
+}
+
+#dept-name h4 {
+	margin: 0;
+	font-size: 15px;
+}
+
+
+/*#dept-name h2, h4, h5, #court-profile h1 {
 	font-family: "Trajan";
 	font-weight: 600;
 	margin: 5px 5px 5px 0px;
@@ -92,16 +129,14 @@ a:hover{
 
 #dept-name h5{
 	margin-top: 0px;
-}
+}*/
 
-
-#nav{
+#nav {
 	font-size: 90%;
-	padding:10px;
-	
+	padding: 10px;
 }
 
-#logo{
+#logo {
 	height: 125px;
 	width: auto;
 	margin: 20px 20px 20px 25px;
@@ -109,18 +144,18 @@ a:hover{
 	vertical-align: top;
 }
 
-#dept-name{
+#dept-name {
 	padding-top: 30px;
 	display: inline-block;
 }
 
-#line{
+#line {
 	height: 2px;
 	width: 300px;
 	background-color: #ffffff;
 }
 
-#seal{
+#seal {
 	height: 115px;
 	width: auto;
 	margin: 20px 20px 20px 0px;
@@ -129,17 +164,21 @@ a:hover{
 	float: right;
 }
 
-#banner{
+#banner {
 	vertical-align: bottom;
-	 background-image: url("../images/bgnewsample.png");
-
-	 background-repeat: no-repeat;
-	 background-color: "#ffffff";
+	background-image: url("../images/bgnewsample.png");
+	background-repeat: no-repeat;
+	background-color: "#ffffff";
 }
 
-#left{
+#left {
 	width: 89%;
 	margin-left: 8px;
-	border:1px solid #999999;
+	border: 1px solid #999999;
 	font-size: 120%;
+}
+
+#footer {
+	height: 80px;
+	background-image: url('../background/fbg.png');
 }

@@ -67,7 +67,7 @@ p   { line-height: 16px; }
 #main_nav ul li {
 	display: inline-block;
 	font-family: Arial;
-	font-size: small;
+	font-size: 14px;
 	/*color: #fff;*/
 	}
 #main_nav ul li img {
