@@ -268,3 +268,8 @@ h6 {font-family: "Roboto"; font-weight: 500; color: #ffffff;}
 /* Added to disable front-end editing */
 li.edit-icon {display: none;}
 table.contentpaneopen tr td span.hasTip a img {display: none;}
+
+table#ql img{
+	width: 35px;
+	height: auto;
+}
