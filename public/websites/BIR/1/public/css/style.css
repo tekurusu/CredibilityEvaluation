@@ -11,7 +11,6 @@
 	src: url('../fonts/RobotoCondensed-Regular.ttf');
 }
 
-h1, h2 {font-family: "Trajan"; color:#ffffff;}
 h4, h5 {font-family: "Roboto"; font-weight: 600; color: #222222;} 
 h6 {font-family: "Roboto"; font-weight: 500; color: #ffffff;}
 
@@ -35,22 +34,32 @@ h6 {font-family: "Roboto"; font-weight: 500; color: #ffffff;}
 }
 
 #dept-name{
-	padding-top: 30px;
+	padding-top: 20px;
 	display: inline-block;
 	margin: 0px 0px 5px 0px;
 }
 
-#dept-name h1, h2{
+#dept-name h1, #dept-name h3, #dept-name h4 {
 	font-family: "Trajan";
-	font-weight: 600;
+	color:#ffffff;
+	font-weight: 500;
+	text-align: left
 }
 
-#dept-name h1{ font-size: 24pt; }
-#dept-name h2{ font-size: 14pt; }
+#dept-name h1 {
+	margin: 0;
+	font-size: 24px;
+}
 
-#line{
-	height: 2px;
-	width: 500px;
+#dept-name h3 {
+	margin: 0;
+	font-size: 14px;
+	border-bottom: 1px solid #FFF;
+	margin: 12px 0 5px 0;
+	font-size: 19px;
+	padding: 0 0 5px 0;
+	display: inline-block;
+	width: 375px;
 }
 
 #theader{
