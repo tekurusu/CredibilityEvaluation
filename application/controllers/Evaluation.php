@@ -35,7 +35,9 @@ class Evaluation extends CI_Controller {
     if ($segment != 3) {
       $this->form_validation->set_rules('orig_rating_' . $segment, 'Credibility Rating', 'required');
       $this->form_validation->set_rules('mod_rating_' . $segment, 'Credibility Rating', 'required');
-      $this->form_validation->set_rules('rank_' . $segment, 'More believable', 'required');
+      $this->form_validation->set_rules('orig_comment_' . $segment, '"What influnced your opinon"', 'required');
+      $this->form_validation->set_rules('mod_comment_' . $segment, '"What influnced your opinon"', 'required');
+      $this->form_validation->set_rules('rank_' . $segment, 'Website Assessment', 'required');
     } else {
       $this->form_validation->set_rules('gender', 'Gender', 'required');
       $this->form_validation->set_rules('age', 'Age', 'required');

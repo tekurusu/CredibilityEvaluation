@@ -27,6 +27,14 @@ CREATE TABLE site_answer (
   mod_rating int(1) NOT NULL,
   mod_comments text NULL,
   believable varchar(1) NOT NULL,
+  color int(1) NOT NULL,
+  font int(1) NOT NULL,
+  graphics int(1) NOT NULL,
+  branding int(1) NOT NULL,
+  layout int(1) NOT NULL,
+  navigation int(1) NOT NULL,
+  sidebar int(1) NOT NULL,
+  content int(1) NOT NULL,
 
   PRIMARY KEY (survey_id, site_name)
 );
