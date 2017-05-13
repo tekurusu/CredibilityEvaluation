@@ -17,17 +17,34 @@ body {
 	padding: 10px 0px 10px 0px;
 }
 
-#dept-name h1, #dept-name h2 {
+#dept-name h1, #dept-name h3, #dept-name h4 {
 	font-family: "Trajan";
-	font-weight: 550;
-	margin: 5px 5px 5px 0px;
+	font-weight: 500;
 }
 
-#dept-name h1{ font-size: 18pt; }
-#dept-name h2{ font-size: 12pt; }
+#dept-name h1 {
+	margin: 0;
+	font-size: 24px;
+}
 
-#dept-name h1{
-	margin-bottom: 0px;
+#dept-name h5 {
+	display: inline-block;
+	color: #FCD000;
+	font-weight: 700;
+	margin: 8px 0;
+	padding-bottom: 2px;
+	font-size: 20px;
+}
+
+#dept-name h3 {
+	margin: 0;
+	font-size: 14px;
+	border-bottom: 1px solid #FFF;
+	margin: 12px 0 5px 0;
+	font-size: 19px;
+	padding: 0 0 5px 0;
+	display: inline-block;
+	width: 570px;
 }
 
 #logo{
@@ -39,7 +56,7 @@ body {
 }
 
 #dept-name, .large-3.medium-12.columns{
-	padding-top: 30px;
+	padding-top: 25px;
 	display: inline-block;
 }
 

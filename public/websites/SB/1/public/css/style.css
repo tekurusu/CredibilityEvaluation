@@ -10,14 +10,13 @@
 
 body {
 background: #D9D9D9;
-background: #fcfcfc;
-background: -moz-radial-gradient(center, ellipse cover, #fcfcfc 0%, #f2f2f2 47%, #d6d6d6 100%);
-background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #fcfcfc), color-stop(47%, #f2f2f2), color-stop(100%, #d6d6d6));
-background: -webkit-radial-gradient(center, ellipse cover, #fcfcfc 0%, #f2f2f2 47%, #d6d6d6 100%);
-background: -o-radial-gradient(center, ellipse cover, #fcfcfc 0%, #f2f2f2 47%, #d6d6d6 100%);
-background: -ms-radial-gradient(center, ellipse cover, #fcfcfc 0%, #f2f2f2 47%, #d6d6d6 100%);
-background: radial-gradient(ellipse at center, #fcfcfc 0%, #f2f2f2 47%, #d6d6d6 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#d6d6d6', GradientType=1 );
+background: -moz-radial-gradient(center, ellipse cover, #fcfcfc 0%, #f2f2f2 47%, #d9d9d9 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #fcfcfc), color-stop(47%, #f2f2f2), color-stop(100%, #d9d9d9));
+background: -webkit-radial-gradient(center, ellipse cover, #fcfcfc 0%, #f2f2f2 47%, #d9d9d9 100%);
+background: -o-radial-gradient(center, ellipse cover, #fcfcfc 0%, #f2f2f2 47%, #d9d9d9 100%);
+background: -ms-radial-gradient(center, ellipse cover, #fcfcfc 0%, #f2f2f2 47%, #d9d9d9 100%);
+background: radial-gradient(ellipse at center, #fcfcfc 0%, #f2f2f2 47%, #d9d9d9 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#d9d9d9', GradientType=1 );
 	font-family: "Tahoma";
 }
 

@@ -12,7 +12,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <link rel='shortcut icon' href='/public/ico/favicon.ico' type='image/x-icon'/ >
 
   <link rel="stylesheet" type="text/css" href="<?php echo base_url("public/css/bootstrap.css"); ?>">
-  <link rel="stylesheet" type="text/css" href="<?php echo base_url("public/css/style.css"); ?>"/>  
+  <link rel="stylesheet" type="text/css" href="../public/css/style.css?v=<?=time();?>"/>  
 
   <script src="<?php echo base_url("public/js/jquery.min.js"); ?>"></script>
   <script src="<?php echo base_url("public/js/bootstrap.js"); ?>"></script>
