@@ -1,3 +1,11 @@
+#########################
+Installation Instructions
+#########################
+
+1. Setup database.php with your database specifics. Create a new database for this project.
+2. Execute tables.sql, site.sql, survey_set.sql, and vw_respondent_results.sql in /scripts folder.
+3. Go to website home page yay!
+
 ###################
 What is CodeIgniter
 ###################

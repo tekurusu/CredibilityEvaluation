@@ -32,47 +32,90 @@
 
 	<h1>Demographics</h1>
 
-	<div id="body">
+	<div id="body" class="demographics">
 		<p>Knowing some information about you will help make this a better study.</p>
-		<?php echo form_open('evaluation', '', $hidden); ?>
-		    <?php echo form_hidden('_segment','3');?>
-			<div class="row">
-					<div class="col-md-2">Gender</div>
-					<div class="col-md-10">
-						<input type="radio" name="gender" value="Female" required <?php echo set_radio('gender', 'Female'); ?> > Female &nbsp;&nbsp;
-						<input type="radio" name="gender" value="Male" <?php echo set_radio('gender', 'Male'); ?> > Male
-					</div>
-			</div>
-			<div class="row">
-					<div class="col-md-2">Age</div>
-					<div class="col-md-10"><input type="number" name="age" min="15" max="95" value="<?php echo set_value('age'); ?>" required></div>
-			</div>
-			<div class="row">
-					<div class="col-md-2">Educational Attainment</div>
-					<div class="col-md-10"><input type="text" name="education" value="<?php echo set_value('education'); ?>" required></div>
-			</div>
-			<div class="row">
-					<div class="col-md-2">Occupation</div>
-					<div class="col-md-10"><input type="text" name="occupation" value="<?php echo set_value('occupation'); ?>" required></div>
-			</div>
-			<div class="row">
-					<div class="col-md-2">About how many hours each week do you use the web?</div>
-					<div class="col-md-10"><input type="number" name="usage" min="1" max="168" value="<?php echo set_value('usage'); ?>" required></div>
-			</div>
-			<div class="row">
-					<div class="col-md-2">Do you consider yourself informed about the government and its proceedings?</div>
-					<div class="col-md-10">
-						<input type="radio" name="informed" value="Yes" required <?php echo set_radio('informed', 'Yes'); ?> > Yes &nbsp;&nbsp;
-						<input type="radio" name="informed" value="No" <?php echo set_radio('informed', 'No'); ?> > No
-					</div>
-			</div>
-	<hr/>
-			<p>As a sign of our gratitude, Php 50.00 will be donated to a cause of your choice.</p>
-			<div class="row">&nbsp;&nbsp;&nbsp;&nbsp;
-						<input type="radio" name="ngo" value="1" required <?php echo set_radio('ngo', '1'); ?> > NGO 1 &nbsp;&nbsp;
-						<input type="radio" name="ngo" value="2" <?php echo set_radio('ngo', '2'); ?> > NGO 2 &nbsp;&nbsp;
-						<input type="radio" name="ngo" value="3" <?php echo set_radio('ngo', '3'); ?> > NGO 3
-			</div>
+		<div class="required-note">Required *</div>
+		<?php echo form_open('thanks', '', $hidden); ?>
+		<?php echo form_hidden('_segment','3');?>
+
+    <h4><label class="form-required">
+    	Gender
+    </label></h4>
+    <div class="multiple-option">
+    	<input type="radio" id="gender_M" name="gender" value="Male" required <?php echo set_radio('gender', 'Male'); ?> />
+    	<label for="gender_M" class="demo-option">Male</label>
+    </div>
+    <div class="multiple-option">
+    	<input type="radio" id="gender_F" name="gender" value="Female" <?php echo set_radio('gender', 'Female'); ?> />
+    	<label for="gender_F" class="demo-option">Female</label>
+    </div>
+    
+    <br>
+    <h4><label class="form-required">
+    	Age
+    </label></h4>
+    <input class="demo-input" type="number" name="age" min="15" max="95" placeholder="i.e. 21" value="<?php echo set_value('age'); ?>" required></input>
+    
+    <br><br>
+    <h4><label class="form-required">
+    	Educational Attainment
+    </label></h4>
+    <input class="demo-input larger" type="text" name="education" placeholder="i.e. College graduate" value="<?php echo set_value('education'); ?>" required></input>
+
+    <br><br>
+		<h4><label class="form-required">
+    	Occupation
+    </label></h4>
+    <input class="demo-input larger" type="text" name="occupation" placeholder="i.e. Teacher" value="<?php echo set_value('occupation'); ?>" required></input>
+
+		<br><br>
+		<h4><label class="form-required">
+    	How many hours per day do you use the internet?
+    </label></h4>
+    <input class="demo-input" type="number" name="usage" min="0" max="24" placeholder="i.e. 4" value="<?php echo set_value('usage'); ?>" required></input>
+
+    <br><br>
+    <h4><label class="form-required">
+    	Do you consider yourself informed about the government and its activities?
+    </label></h4>
+    <div class="multiple-option">
+    	<input type="radio" id="informed_Y" name="informed" value="Y" required <?php echo set_radio('informed', 'Y'); ?> />
+    	<label for="informed_Y" class="demo-option">Yes</label>
+    </div>
+    <div class="multiple-option">
+    	<input type="radio" id="informed_N" name="informed" value="N" <?php echo set_radio('informed', 'N'); ?> />
+    	<label for="informed_N" class="demo-option">No</label>
+    </div>
+    <br>
+
+		<hr/>
+			<br>
+		<h4><label class="form-required">
+    	Select an NGO
+    </label></h4>
+    <p>As a sign of gratitude,  Php 50.00 will be donated by the researcher to an NGO of your choice.</p>
+    <div class="ngo multiple-option">
+    	<input type="radio" id="ngo_1" name="ngo" value="1" required <?php echo set_radio('ngo', '1'); ?> />
+    	<label for="ngo_1">
+            <p>Project Liwanag (Indigenous People)</p>
+            <img src="<?php echo base_url("public/images/liwanag.png"); ?>" class="liwanag"/>
+        </label>
+    </div><br>
+    <div class="ngo multiple-option">
+        <input type="radio" id="ngo_1" name="ngo" value="2" required <?php echo set_radio('ngo', '2'); ?> />
+        <label for="ngo_2">
+            <p>Philippine Toy Library (Education)</p>
+            <img src="<?php echo base_url("public/images/toy-library.jpg"); ?>" class="toy-library"/>
+        </label>
+    </div><br>
+    <div class="ngo multiple-option">
+        <input type="radio" id="ngo_1" name="ngo" value="3" required <?php echo set_radio('ngo', '3'); ?> />
+        <label for="ngo_3">
+            <p>Food for the Hungry PH (Hunger/Poverty)</p>
+            <img src="<?php echo base_url("public/images/fh.jpg"); ?>" class="food-hungry"/>
+        </label>
+    </div><br>
+
 		</br>
 		  <input type="submit" value="Submit">
 		</form>

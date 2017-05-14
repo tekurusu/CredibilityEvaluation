@@ -20,7 +20,7 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->helper('form');
+		  $this->load->helper('form');
     	$this->load->library('form_validation');
 
     	$this->form_validation->set_rules('email', 'Email', 'required|valid_email|is_unique[respondent.email]');
@@ -51,14 +51,8 @@ class Welcome extends CI_Controller {
         );
 
 			$this->session->set_userdata($newdata);
-
-      $site_query = $this->db->get_where('site', array('short_name' => $set["site_1"]));
-      $site = $site_query->row_array();
-
-      $data['site_name'] = $site["name"];
-      $data['short_link'] = $site["short_name"];
       
-      $this->load->view('evaluation', $data);
+      $this->load->view('welcome');
     }
 
 	}

@@ -50,6 +50,13 @@ CREATE TABLE site (
 CREATE TABLE survey_set (
   set_code varchar(1) NOT NULL,
   site_1 varchar(10) NOT NULL,
+  mod_1 int(1) NOT NULL,
   site_2 varchar(10) NOT NULL,
+  mod_2 int(1) NOT NULL,
   PRIMARY KEY (set_code)
+);
+
+CREATE TABLE email_failures (
+  survey_id int(11) NOT NULL,
+  PRIMARY KEY (survey_id)
 );

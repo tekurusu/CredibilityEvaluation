@@ -18,7 +18,7 @@ class Results extends CI_Controller {
             $this->load->library('session');
             if ($this->session->userdata('login_validated')) {
                 return true;
-            } else if ($this->input->post("password") == "hello") {
+            } else if ($this->input->post("password") == "jlct") {
                 $this->session->set_userdata("login_validated", true);
                 return true;
             } else {
@@ -68,7 +68,6 @@ class Results extends CI_Controller {
                 $responses_query = $this->db->get("site_answer");
                 $data['responses_table'] = $this->table->generate($responses_query);
 
-                $this->load->view('templates/header');
                 $this->load->view('results', $data);
         }
 
