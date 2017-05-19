@@ -21,7 +21,7 @@ body { margin:auto; }
 .left-module { }
 .left-module ul { margin: 0; padding: 0; }
 .left-module li { margin:0 0 1px 0; list-style-type:none; padding: 0; background-color:#f9f9f9; border:solid 1px #bbb;}
-.left-module li:hover { background-color:#DCE6F2; }
+.left-module li:hover { background-color:#c1deea; }
 .left-module ul li a { font-weight:normal; display:block; clear:both; padding:4px 8px; color:#333; }
 
 .li-header { color:#039; font-size:15px; font-weight:bold; text-transform:uppercase;
@@ -50,8 +50,8 @@ body { margin:auto; }
 #transparency{ height:100px; background-image:url(../img/system/transparency-seal-small.png); background-position:center; background-repeat:no-repeat; }
 #mail:hover{ height:100px; background-image:url(../img/system/transparency-seal.png); background-position:center; background-repeat:no-repeat; cursor:pointer; }
 /* ------------------ Web Mail ------------------*/ 
-#mail{ height:55px; background-image:url(../img/system/mail.jpg); background-position:center; background-repeat:no-repeat; }
-#mail:hover{ height:55px; background-image:url(../img/system/mail-hover.jpg); background-position:center; background-repeat:no-repeat; cursor:pointer; }
+#mail{height: 80px; background-size: contain; background-image:url(../img/system/mail.png); background-position:center; background-repeat:no-repeat; }
+#mail:hover{height: 80px;  background-size: conatin; background-image:url(../img/system/mail-hover.png); background-position:center; background-repeat:no-repeat; cursor:pointer; }
 /* ------------------ forms (add, edit) ------------------ */
 .form input{ width:100%; }
 .form textarea { width:98%; }
