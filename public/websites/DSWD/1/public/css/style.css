@@ -35,6 +35,13 @@ body {
 	vertical-align: top;
 }
 
+#transp{
+	width: 130px;
+	padding-left: 30px;
+	margin-right: 20px;
+}
+
+
 #dept-name{
 	padding-top: 10px;
 	display: inline-block;
