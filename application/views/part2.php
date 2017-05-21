@@ -150,7 +150,7 @@
         <hr>  
 
         <h3><label class="form-required">
-          Website Assessment
+          Credibility Ranking
         </label></h3>
         <p>Which website is more believable?</p>
         <div class="multiple-option">
