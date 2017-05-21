@@ -32,9 +32,9 @@
 
 <div id="container">
 	<h2>SET 1</h2>
-	<p>Assess each website's <b>believability</b> based on <b>how they look</b></p>
-   	<p>Links have been disabled and <b>only the homepage is viewable</b>, please focus your attention on that one page.</b></p>
+	<p>Assess each website's <b>believability</b> based on <b>how they look</b>. Links have been disabled and <b>only the homepage is viewable</b>, please focus your attention on that one page.</b></p>
 	<hr>
+
 	<?php if ($errors = validation_errors()) { ?>
 	<div class="alert alert-danger" role="alert">
 		<?php echo $errors; ?>
