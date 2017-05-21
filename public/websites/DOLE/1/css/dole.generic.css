@@ -2,16 +2,16 @@ body { margin:auto; }
 .slide-area img { height:168px; width:300px; }
 .poster-area img { height:130px; width:157px; }
 /* -----------------------------------------------------------------------------------------------------------------------------------------------*/
-#banner {  height:120px; width:100%; background-color: #f9f9f9; padding: 5px 0 10px 0; }
+#banner {  height:120px; width:100%; min-width: 980px; background-color: #f9f9f9; padding: 5px 0 10px 0; }
 /* -----------------------------------------------------------------------------------------------------------------------------------------------*/
-.horizontal-menu{  height:40px; background-color:#003299; color:#FFF; margin-bottom:10px; font-size:16px; }
+.horizontal-menu{ width:100%; min-width: 980px; height:40px; background-color:#003299; color:#FFF; margin-bottom:10px; font-size:16px; }
 .horizontal-menu ul { padding: 0; }
 .horizontal-menu li { float:left; list-style:none; margin:0 0 0.5em 0; padding: 0; }
 .horizontal-menu ul li a { height:16px; display: block; clear: both; padding: 10px 20px 14px 20px; color:#FFF; text-decoration:none; }
 .horizontal-menu ul li a:hover { background-color:#DCE6F2; color:#333;} 
 	.menu { height:40px; width:970px; margin:0 auto; }
 /* -----------------------------------------------------------------------------------------------------------------------------------------------*/
-#footer{ height:20px; padding:10px; margin-top:10px; font-size:12px; background-color: #003299; }
+#footer{ height:80px; padding:10px; margin-top:10px; font-size:12px; background-color: #003299; }
 /* -----------------------------------------------------------------------------------------------------------------------------------------------*/
 .container {
 	margin:0 auto; padding:10px;
