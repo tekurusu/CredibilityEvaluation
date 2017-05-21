@@ -6,14 +6,30 @@
         $(element).addClass("prevent-hover");
     }
 
+    function activateLastPart (element) {
+      element.removeClass("disabled-helper")
+      element.find(":input").prop("disabled", false);
+      if (view1 && view2) {
+        $("input[type=submit]").removeClass("button-disabled")
+          .prop("disabled", false);
+      }
+    }
+
+    var view1 = false;
+    var view2 = false;
+
     $(document).ready(function() {
 
       $("#website_1").one("click", function(){
         setViewWebsite(this, 3);
+        view1 = true;
+        activateLastPart($(".activator-1"));
       });
 
       $("#website_2").one("click", function(){
         setViewWebsite(this, <?php echo $mod; ?>);
+        view2 = true;
+        activateLastPart($(".activator-2"));
       });
     });
   </script>
@@ -56,7 +72,8 @@
         <?php echo form_hidden('_segment','2');?>
 
         <a id="website_1"><h3>View Website 1</h3></a>
-        <p>You have 25 seconds, please use this time wisely and observe how the homepage looks thoroughly.</p> 
+        <p>You have 25 seconds, please use this time wisely and observe how the homepage looks thoroughly.</p>
+        <div class="activator-1 disabled-helper">
         <h4><label class="form-required">
           Credibility Rating 
         </label></h4>
@@ -74,12 +91,12 @@
           </tr>
           <tr>
             <td class="label-row">Not<br>believable</td>
-            <td class="rating-row"><input type="radio" name="orig_rating_2" value="0" required <?php echo set_radio('orig_rating_2', '0'); ?> /></td>
-            <td class="rating-row"><input type="radio" name="orig_rating_2" value="1" <?php echo set_radio('orig_rating_2', '1'); ?> /></td>
-            <td class="rating-row"><input type="radio" name="orig_rating_2" value="2" <?php echo set_radio('orig_rating_2', '2'); ?> /></td>
-            <td class="rating-row"><input type="radio" name="orig_rating_2" value="3" <?php echo set_radio('orig_rating_2', '3'); ?> /></td>
-            <td class="rating-row"><input type="radio" name="orig_rating_2" value="4" <?php echo set_radio('orig_rating_2', '4'); ?> /></td>
-            <td class="rating-row"><input type="radio" name="orig_rating_2" value="5" <?php echo set_radio('orig_rating_2', '5'); ?> /></td>
+            <td class="rating-row"><input type="radio" name="orig_rating_2" value="0" disabled required <?php echo set_radio('orig_rating_2', '0'); ?> /></td>
+            <td class="rating-row"><input type="radio" name="orig_rating_2" value="1" disabled <?php echo set_radio('orig_rating_2', '1'); ?> /></td>
+            <td class="rating-row"><input type="radio" name="orig_rating_2" value="2" disabled <?php echo set_radio('orig_rating_2', '2'); ?> /></td>
+            <td class="rating-row"><input type="radio" name="orig_rating_2" value="3" disabled <?php echo set_radio('orig_rating_2', '3'); ?> /></td>
+            <td class="rating-row"><input type="radio" name="orig_rating_2" value="4" disabled <?php echo set_radio('orig_rating_2', '4'); ?> /></td>
+            <td class="rating-row"><input type="radio" name="orig_rating_2" value="5" disabled <?php echo set_radio('orig_rating_2', '5'); ?> /></td>
             <td class="label-row">Very<br>believable</td>
           </tr>
         </table>
@@ -88,12 +105,13 @@
           What influenced your opinion? 
         </label></h4>
         <p>Why did you give this rating? Please explain.</p>
-        <textarea class="comment-input" name="orig_comment_2" rows="4" cols="40" required><?php echo set_value('orig_comment_2'); ?></textarea>
-
-        <br><br><hr>  
+        <textarea class="comment-input" name="orig_comment_2" rows="4" cols="40" disabled required><?php echo set_value('orig_comment_2'); ?></textarea>
+        </div>
+        <br><hr>  
 
         <a id="website_2"><h3>View Website 2</h3></a>
-        <p>You have 25 seconds, please use this time wisely and observe how the homepage looks thoroughly.</p> 
+        <p>You have 25 seconds, please use this time wisely and observe how the homepage looks thoroughly.</p>
+        <div class="activator-2 disabled-helper">
         <h4><label class="form-required">
           Credibility Rating 
         </label></h4>
@@ -111,12 +129,12 @@
           </tr>
           <tr>
             <td class="label-row">Not<br>believable</td>
-            <td class="rating-row"><input type="radio" name="mod_rating_2" value="0" required <?php echo set_radio('mod_rating_2', '0'); ?> /></td>
-            <td class="rating-row"><input type="radio" name="mod_rating_2" value="1" <?php echo set_radio('mod_rating_2', '1'); ?> /></td>
-            <td class="rating-row"><input type="radio" name="mod_rating_2" value="2" <?php echo set_radio('mod_rating_2', '2'); ?> /></td>
-            <td class="rating-row"><input type="radio" name="mod_rating_2" value="3" <?php echo set_radio('mod_rating_2', '3'); ?> /></td>
-            <td class="rating-row"><input type="radio" name="mod_rating_2" value="4" <?php echo set_radio('mod_rating_2', '4'); ?> /></td>
-            <td class="rating-row"><input type="radio" name="mod_rating_2" value="5" <?php echo set_radio('mod_rating_2', '5'); ?> /></td>
+            <td class="rating-row"><input type="radio" name="mod_rating_2" value="0" disabled required <?php echo set_radio('mod_rating_2', '0'); ?> /></td>
+            <td class="rating-row"><input type="radio" name="mod_rating_2" value="1" disabled <?php echo set_radio('mod_rating_2', '1'); ?> /></td>
+            <td class="rating-row"><input type="radio" name="mod_rating_2" value="2" disabled <?php echo set_radio('mod_rating_2', '2'); ?> /></td>
+            <td class="rating-row"><input type="radio" name="mod_rating_2" value="3" disabled <?php echo set_radio('mod_rating_2', '3'); ?> /></td>
+            <td class="rating-row"><input type="radio" name="mod_rating_2" value="4" disabled <?php echo set_radio('mod_rating_2', '4'); ?> /></td>
+            <td class="rating-row"><input type="radio" name="mod_rating_2" value="5" disabled <?php echo set_radio('mod_rating_2', '5'); ?> /></td>
             <td class="label-row">Very<br>believable</td>
           </tr>
         </table>
@@ -125,9 +143,10 @@
           What influenced your opinion? 
         </label></h4>
         <p>Why did you give this rating? Please explain.</p>
-        <textarea class="comment-input" name="mod_comment_2" rows="4" cols="40" required><?php echo set_value('mod_comment_2'); ?></textarea>
+        <textarea class="comment-input" name="mod_comment_2" rows="4" cols="40" disabled required><?php echo set_value('mod_comment_2'); ?></textarea>
 
-        <br><br>
+        </div>
+        <br>
         <hr>  
 
         <h3><label class="form-required">
@@ -240,7 +259,7 @@
           </tr>
         </table>
         <br><br>
-      <input type="submit" value="Next">
+      <input class="button-disabled" type="submit" value="Next" disabled>
       </form>
   </div>
 
