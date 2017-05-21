@@ -249,6 +249,6 @@ label[for^='rank_'] {
 }
 
 .food-hungry {
-	width: 150px;
-	margin-left: 20px;
+	width: 100px;
+	margin-left: 30px;
 }

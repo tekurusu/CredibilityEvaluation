@@ -22,8 +22,8 @@
         <a href="http://www.philippinetoylibrary.org/">http://www.philippinetoylibrary.org/</a>
       </li><br>
       <li>
-        Food for the Hungry PH <br>
-        <a href="http://fhphilippines.org/">http://fhphilippines.org/</a>
+        Hapag-asa <br>
+        <a href="http://hapagasafeeding.com/">http://hapagasafeeding.com/</a>
       </li>
     </ul>
 

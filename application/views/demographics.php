@@ -111,8 +111,8 @@
     <div class="ngo multiple-option">
         <input type="radio" id="ngo_1" name="ngo" value="3" required <?php echo set_radio('ngo', '3'); ?> />
         <label for="ngo_3">
-            <p>Food for the Hungry PH (Hunger/Poverty)</p>
-            <img src="<?php echo base_url("public/images/fh.jpg"); ?>" class="food-hungry"/>
+            <p>Hapag-asa (Hunger/Poverty)</p>
+            <img src="<?php echo base_url("public/images/hapagasa.jpg"); ?>" class="food-hungry"/>
         </label>
     </div><br>
 
@@ -122,7 +122,7 @@
 		
 	</div>
 
-	<p class="footer"><strong>Version 1.0</strong></p>
+	<p class="footer"><strong>Version 2.0.1</strong></p>
 </div>
 
 </body>

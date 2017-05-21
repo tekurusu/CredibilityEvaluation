@@ -45,7 +45,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<br>
 			<li>Look around each website and <b>assess their credibility</b>. Links to other parts of the website have been disabled and only the homepages are viewable and interactable.</li>
 			<br>
-			<li>Based on your <b>first impression</b>, rate their credibility and provide some insight on how you came up with such judgement. </li>
+			<li>Focus on how they <b>look</b> then based on your <b>first impression</b>, rate their credibility and provide some insight on how you came up with such judgement. </li>
 		</ol>
 		<br>
 

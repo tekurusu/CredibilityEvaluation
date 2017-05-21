@@ -32,6 +32,8 @@
 
 <div id="container">
   <h2>SET 2</h2>
+   <p>Assess each website's <b>believability</b> based on <b>how they look</b></p>
+   <p>Links have been disabled and <b>only the homepage is viewable</b>, please focus your attention on that one page.</b></p>
   <hr>
   <?php if ($errors = validation_errors()) { ?>
   <div class="alert alert-danger" role="alert">
@@ -55,7 +57,7 @@
         <?php echo form_hidden('_segment','2');?>
 
         <a id="website_1"><h3>View Website 1</h3></a>
-        <p>You have 25 seconds to view this website. Please look at the homepage thoroughly and assess its credibility. </p>
+        <p>You have 25 seconds, please use this time wisely and observe how the homepage looks thoroughly.</p> 
         <h4><label class="form-required">
           Credibility Rating 
         </label></h4>
@@ -92,7 +94,7 @@
         <br><br><hr>  
 
         <a id="website_2"><h3>View Website 2</h3></a>
-        <p>You have 25 seconds to view this website. Please look at the homepage thoroughly and assess its credibility.</p> 
+        <p>You have 25 seconds, please use this time wisely and observe how the homepage looks thoroughly.</p> 
         <h4><label class="form-required">
           Credibility Rating 
         </label></h4>
@@ -143,7 +145,7 @@
         </div>
         <br>
         <h4><label class="subsection-header">
-          Reasoning
+          Factors
         </label></h4>
         <p> How did the following elements affect your decision? Please rate from 0 to 5, with 0 being "Not at all" and 5 being "Very much".</p>
         <table class="cred_rating factor-matrix">
@@ -158,7 +160,7 @@
             <th class="rating-row">&nbsp;</th>
           </tr>
           <tr>
-            <td class="label-row form-required">Color </td>
+            <td class="label-row form-required">Colors </td>
             <td class="rating-row"><input type="radio" name="color_2" value="0" required <?php echo set_radio('color_2', '0'); ?> /></td>
             <td class="rating-row"><input type="radio" name="color_2" value="1" <?php echo set_radio('color_2', '1'); ?> /></td>
             <td class="rating-row"><input type="radio" name="color_2" value="2" <?php echo set_radio('color_2', '2'); ?> /></td>
