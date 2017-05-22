@@ -1864,9 +1864,12 @@ ul.dropdown-menu a {
 .nav .open>a,
 .nav .open>a:focus,
 .nav .open>a:hover,
-.nav>li>a:focus,
 .nav>li>a:hover {
 	background-color: #f6aa00;
+}
+
+.nav>li>a:focus{
+	background-color: white;
 }
 
 .navbar-nav>li>a,
